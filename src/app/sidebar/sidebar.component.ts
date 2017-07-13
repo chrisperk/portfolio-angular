@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent {
-  title = 'Christopher Perkins';
-  subtitle = 'Web Dev & Wizard Tamer';
-  linkText = [
+  title: string = 'Christopher Perkins';
+  subtitle: string = 'Web Dev & Wizard Tamer';
+  linkText: string[] = [
     'Work',
     'About',
     'Contact'
