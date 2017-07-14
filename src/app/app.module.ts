@@ -26,10 +26,6 @@ import { ContactComponent } from './contact/contact.component';
         component: CoverComponent
       },
       {
-        path: '**',
-        redirectTo: ''
-      },
-      {
         path: 'work',
         component: WorkComponent
       },
@@ -40,6 +36,10 @@ import { ContactComponent } from './contact/contact.component';
       {
         path: 'contact',
         component: ContactComponent
+      },
+      {
+        path: '**',
+        redirectTo: ''
       }
     ])
   ],
