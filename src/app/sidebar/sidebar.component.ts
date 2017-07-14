@@ -11,6 +11,7 @@ export class SidebarComponent {
   linkText: string[] = [
     'Work',
     'About',
+    'Resume',
     'Contact'
   ];
 }

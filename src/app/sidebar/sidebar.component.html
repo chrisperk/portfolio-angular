@@ -1,23 +1,42 @@
 <div class="container-fluid sidebar-container">
   <div class="row">
-    <div class="col-10 offset-1">
+    <div class="col-8 offset-2">
       <div class="row">
         <div class="col-12">
           {{title}}
         </div>
       </div>
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-12">
           {{subtitle}}
+        </div>
+      </div> -->
+      <div class="row">
+        <div class="col-12">
+          <ul>
+            <li>
+              <a routerLink="/">{{linkText[0]}}</a>
+            </li>
+            <li>
+              <a routerLink="/work">{{linkText[1]}}</a>
+            </li>
+            <li>
+              <a routerLink="/about">{{linkText[2]}}</a>
+            </li>
+            <li>
+              <a routerLink="/contact">{{linkText[3]}}</a>
+            </li>
+          </ul>
         </div>
       </div>
       <div class="row">
         <div class="col-12">
-          <ul>
-            <li>{{linkText[0]}}</li>
-            <li>{{linkText[1]}}</li>
-            <li>{{linkText[2]}}</li>
-          </ul>
+          <div class="socialicons">
+            <a href="mailto:christopherperkins.512@gmail.com"><i class="fa fa-envelope fa-2x" title="Email" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/christopher-perkins-28a79445"><i class="fa fa-linkedin fa-2x" title="LinkedIn" aria-hidden="true"></i></a>
+            <a href="https://github.com/chrisperk/"><i class="fa fa-github fa-2x" title="GitHub" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/theperkness"><i class="fa fa-twitter fa-2x" title="Twitter" aria-hidden="true"></i></a>
+          </div>
         </div>
       </div>
     </div>

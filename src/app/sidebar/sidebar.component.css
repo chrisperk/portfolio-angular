@@ -4,3 +4,7 @@
   flex-direction: column;
   justify-content: center;
 }
+
+.socialicons a {
+    margin: 0 2%;
+}
