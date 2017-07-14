@@ -16,8 +16,12 @@ import { CoverComponent } from './cover/cover.component';
     BrowserModule,
     RouterModule.forRoot([
       {
-        path: 'cover',
+        path: '',
         component: CoverComponent
+      },
+      {
+        path: '**',
+        redirectTo: ''
       }
     ])
   ],
