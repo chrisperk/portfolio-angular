@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { TooltipModule } from 'ngx-bootstrap';
 
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
@@ -41,7 +42,8 @@ import { ContactComponent } from './contact/contact.component';
         path: '**',
         redirectTo: ''
       }
-    ])
+    ]),
+    TooltipModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

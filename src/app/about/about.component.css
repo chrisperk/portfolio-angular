@@ -1,0 +1,50 @@
+.about-heading {
+  height: 30%;
+}
+
+.about-heading-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #999;
+  background-color: #999;
+  border-radius: 10px;
+  color: #fff;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+.about-content {
+  height: 68%;
+}
+
+.my-card {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 3%;
+  border: 2px solid #999;
+  border-radius: 5px;
+  margin: 5% 0;
+}
+
+.about-list {
+  font-size: 1.2em;
+  padding-left: 3%;
+  text-align: left;
+}
+
+.about-list li {
+  margin-bottom: 4%;
+}
+
+.about-list i {
+  padding-top: 3%;
+}
+
+@media(min-width: 768px) {
+  .toolkit-box {
+    border-right: 10px solid #999;
+  }
+}
