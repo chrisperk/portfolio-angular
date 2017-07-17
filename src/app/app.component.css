@@ -9,6 +9,7 @@ html {
 
 .component-wrapper {
   height: 100vh;
+  overflow-y: scroll;
 }
 
 .full-height {
