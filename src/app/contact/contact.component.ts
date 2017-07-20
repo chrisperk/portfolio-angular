@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'contact',
   templateUrl: './contact.component.html',
-  // styleUrls: ['./cover.component.css', '../app.component.css']
+  styleUrls: ['./contact.component.css', '../app.component.css']
 })
 export class ContactComponent implements OnInit {
   email: string;

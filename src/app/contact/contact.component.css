@@ -1,0 +1,28 @@
+label, input, textarea, button {
+  display: block;
+}
+
+label {
+  margin-bottom: 0;
+}
+
+form {
+  width: 50%;
+}
+
+input, textarea {
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+.header-space {
+  height: 5vh;
+}
+
+.form-space {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
