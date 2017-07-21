@@ -3,8 +3,43 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  background-color: #a9e3fc;
+}
+
+.sidebar-container h3, .socialicons a {
+  color: #7c54d3;
+}
+
+.sidebar-container h3:hover, .socialicons a:hover {
+  color: #401896;
+}
+
+.sidebar-container a:hover {
+  text-decoration: none;
 }
 
 .socialicons a {
     margin: 0 2%;
+}
+
+.nav-links {
+  margin: 1em 0 2em 0;
+}
+
+.nav-links li:hover {
+  background-color: #7c54d3;
+}
+
+.nav-links li:hover > a {
+  color: #eee;
+}
+
+.active-link {
+  background-color: #11d6ab;
+  color: #eee;
+}
+
+a:focus {
+  text-decoration: none;
 }

@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'sidebar',
   templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.css']
+  styleUrls: ['./sidebar.component.css', '../app.component.css']
 })
 export class SidebarComponent {
   title: string = 'Christopher Perkins';

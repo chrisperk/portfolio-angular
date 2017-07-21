@@ -1,9 +1,9 @@
 <div class="container-fluid sidebar-container">
   <div class="row">
-    <div class="col-8 offset-2">
+    <div class="col-12">
       <div class="row">
         <div class="col-12">
-          <a routerLink="/">{{title}}</a>
+          <a routerLink="/" [routerLinkActive]="['active-link']"><h3>{{title}}</h3></a>
         </div>
       </div>
       <!-- <div class="row">
@@ -12,19 +12,21 @@
         </div>
       </div> -->
       <div class="row">
-        <div class="col-12">
-          <ul>
-            <li>
-              <a routerLink="/work">{{linkText[0]}}</a>
+        <div class="col-8 margin-center">
+          <ul class="list-group nav-links">
+            <li class="list-group-item">
+              <a routerLink="/work" [routerLinkActive]="['active-link']" class="margin-center">{{linkText[0]}}</a>
             </li>
-            <li>
-              <a routerLink="/about">{{linkText[1]}}</a>
+            <li class="list-group-item">
+              <a routerLink="/about" [routerLinkActive]="['active-link']" class="margin-center">{{linkText[1]}}</a>
             </li>
             <!-- <li>
               <a>{{linkText[2]}}</a>
             </li> -->
-            <li>
-              <a routerLink="/contact">{{linkText[3]}}</a>
+            <li class="list-group-item">
+              <a routerLink="/contact" [routerLinkActive]="['active-link']" class="margin-center">
+                {{linkText[3]}}
+              </a>
             </li>
           </ul>
         </div>

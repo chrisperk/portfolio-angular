@@ -16,6 +16,10 @@ html {
   height: 100%;
 }
 
+.margin-center {
+  margin: 0 auto;
+}
+
 .center-text {
   text-align: center;
 }

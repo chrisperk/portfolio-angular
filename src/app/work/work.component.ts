@@ -16,7 +16,7 @@ export class WorkComponent {
     },
     {
       name: 'Gist Blog',
-      link: 'https://chrisperk.github.io/javascript-workbook/apps/11gist-blog/"',
+      link: 'https://chrisperk.github.io/javascript-workbook/apps/11gist-blog/',
       title: 'Gist Blog link',
       bannerClass: 'gist-banner work-banner',
       description: 'A responsive digital space using the Materialize library that pulls Gist JSON objects from my GitHub account to display my deepest inner thoughts.'
