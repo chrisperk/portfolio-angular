@@ -13,22 +13,20 @@
       </div> -->
       <div class="row">
         <div class="col-8 margin-center">
-          <ul class="list-group nav-links">
-            <li class="list-group-item">
-              <a routerLink="/work" [routerLinkActive]="['active-link']" class="margin-center">{{linkText[0]}}</a>
-            </li>
-            <li class="list-group-item">
-              <a routerLink="/about" [routerLinkActive]="['active-link']" class="margin-center">{{linkText[1]}}</a>
-            </li>
+          <div class="list-group nav-links">
+            <a routerLink="/work" class="list-group-item margin-center" [routerLinkActive]="['active-link']">
+              <span class="margin-center">{{linkText[0]}}</span>
+            </a>
+            <a routerLink="/about" class="list-group-item margin-center" [routerLinkActive]="['active-link']">
+              <span class="margin-center">{{linkText[1]}}</span>
+            </a>
             <!-- <li>
               <a>{{linkText[2]}}</a>
             </li> -->
-            <li class="list-group-item">
-              <a routerLink="/contact" [routerLinkActive]="['active-link']" class="margin-center">
-                {{linkText[3]}}
-              </a>
-            </li>
-          </ul>
+            <a routerLink="/contact" class="list-group-item margin-center" [routerLinkActive]="['active-link']">
+              <span class="margin-center">{{linkText[3]}}</span>
+            </a>
+          </div>
         </div>
       </div>
       <div class="row">

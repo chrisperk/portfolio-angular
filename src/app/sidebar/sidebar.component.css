@@ -20,23 +20,30 @@
 }
 
 .socialicons a {
-    margin: 0 2%;
+  margin: 0 2%;
 }
 
 .nav-links {
   margin: 1em 0 2em 0;
 }
 
-.nav-links li:hover {
+.list-group > a {
+  width: 100%;
+}
+
+.active-link, .nav-links > .active-link:hover {
+  background-color: #11d6ab;
+}
+
+.nav-links a {
+  color: #7c54d3;
+}
+
+.nav-links a:hover {
   background-color: #7c54d3;
 }
 
-.nav-links li:hover > a {
-  color: #eee;
-}
-
-.active-link {
-  background-color: #11d6ab;
+.nav-links > a:hover, .nav-links > .active-link {
   color: #eee;
 }
 
