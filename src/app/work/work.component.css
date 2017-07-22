@@ -7,11 +7,17 @@
   text-align: center;
 }
 
+#work > h3 {
+  color: #7c54d3;
+  font-weight: 500;
+}
+
 .work-banner {
   height: 300px;
   width: 90%;
   margin: 3% auto 0 auto;
   border-radius: 20px;
+  border: 2px solid #7c54d3;
 }
 
 .work-list {
@@ -57,7 +63,7 @@
 .banner-text {
   opacity: 0;
   text-align: center;
-  color: #fff;
+  color: #eee;
   padding-top: 15%;
 }
 

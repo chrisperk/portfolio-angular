@@ -10,6 +10,7 @@ html {
 .component-wrapper {
   height: 100vh;
   overflow-y: scroll;
+  background-color: #d1fcf1;
 }
 
 .full-height {

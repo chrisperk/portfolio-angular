@@ -7,10 +7,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid #999;
-  background-color: #999;
+  border: 1px solid #ee6e73;
+  background-color: #ee6e73;
   border-radius: 10px;
-  color: #fff;
+  color: #eee;
   margin-top: 2%;
   margin-bottom: 2%;
   text-align: center;
@@ -18,20 +18,24 @@
 
 .about-content {
   height: 68%;
+  color: #7c54d3;
+}
+
+.toolkit-box {
+  padding-right: 25px;
 }
 
 .my-card {
   padding-left: 0;
   padding-right: 0;
   padding-top: 3%;
-  border: 2px solid #999;
+  border: 2px solid #7c54d3;
   border-radius: 5px;
   margin: 5% 0;
 }
 
 .about-list {
   font-size: 1.2em;
-  padding-left: 3%;
   text-align: left;
 }
 
@@ -44,7 +48,7 @@
 }
 
 @media(min-width: 768px) {
-  .toolkit-box {
-    border-right: 10px solid #999;
+  .list-box {
+    border-left: 10px solid #ee6e73;
   }
 }
