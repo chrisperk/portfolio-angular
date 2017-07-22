@@ -8,10 +8,9 @@ import { Component } from '@angular/core';
 export class SidebarComponent {
   title: string = 'Christopher Perkins';
   subtitle: string = 'Web Dev & Wizard Tamer';
-  linkText: string[] = [
-    'Work',
-    'About',
-    'Resume',
-    'Contact'
+  linkText: any = [
+    {text: 'Work', link: '/work'},
+    {text: 'About', link: '/about'},
+    {text: 'Contact', link: '/contact'}
   ];
 }

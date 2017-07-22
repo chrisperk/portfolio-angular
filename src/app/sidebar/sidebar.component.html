@@ -3,7 +3,7 @@
     <div class="col-12">
       <div class="row">
         <div class="col-12">
-          <a routerLink="/" [routerLinkActive]="['active-link']"><h3>{{title}}</h3></a>
+          <a routerLink="/"><h3>{{title}}</h3></a>
         </div>
       </div>
       <!-- <div class="row">
@@ -14,17 +14,13 @@
       <div class="row">
         <div class="col-8 margin-center">
           <div class="list-group nav-links">
-            <a routerLink="/work" class="list-group-item margin-center" [routerLinkActive]="['active-link']">
-              <span class="margin-center">{{linkText[0]}}</span>
-            </a>
-            <a routerLink="/about" class="list-group-item margin-center" [routerLinkActive]="['active-link']">
-              <span class="margin-center">{{linkText[1]}}</span>
-            </a>
-            <!-- <li>
-              <a>{{linkText[2]}}</a>
-            </li> -->
-            <a routerLink="/contact" class="list-group-item margin-center" [routerLinkActive]="['active-link']">
-              <span class="margin-center">{{linkText[3]}}</span>
+            <a
+              *ngFor="let link of linkText"
+              routerLink="{{link.link}}"
+              class="list-group-item margin-center"
+              [routerLinkActive]="['active-link']"
+            >
+              <span class="margin-center">{{link.text}}</span>
             </a>
           </div>
         </div>
