@@ -13,12 +13,14 @@ export class AppComponent implements OnInit {
   }
 
   hideNavMenu() {
-    document.getElementById('sidebar').classList.add('hidden-xs-down');
+    document.getElementById('mobile-sidebar').classList.add('mobile-sidebar');
+    document.getElementById('mobile-sidebar').classList.remove('reveal-mobile-sidebar');
     this.displaySidebar = false;
   }
 
   revealNavMenu() {
-    document.getElementById('sidebar').classList.remove('hidden-xs-down');
+    document.getElementById('mobile-sidebar').classList.remove('mobile-sidebar');
+    document.getElementById('mobile-sidebar').classList.add('reveal-mobile-sidebar');
     this.displaySidebar = true;
   }
 }

@@ -2,24 +2,27 @@
 <div class="app-wrapper">
   <div class="container-fluid no-padding">
     <div class="row no-gutters">
-      <div id="sidebar" class="col-sm-3 hidden-xs-down">
-        <div *ngIf="displaySidebar" class="row">
-          <div class="col-12 hidden-sm-up nav-hidebutton-row">
-            <button type="button" class="btn btn-default pull-right" (click)="hideNavMenu()">
-              <i class="fa fa-bars"></i>
-            </button>
-          </div>
-        </div>
-        <div class="row">
+      <div class="col-sm-3 hidden-xs-down">
+        <div id="sidebar" class="row">
           <div class="col-12">
             <sidebar></sidebar>
           </div>
         </div>
       </div>
-      <div *ngIf="!displaySidebar" class="col-12 hidden-sm-up nav-revealbutton-row">
-        <button type="button" class="btn btn-default pull-right" (click)="revealNavMenu()">
-          <i class="fa fa-bars"></i>
-        </button>
+      <div id="mobile-sidebar" class="col-12 hidden-sm-up no-gutters mobile-sidebar">
+        <div *ngIf="displaySidebar" class="row nav-hidebutton-row">
+          <button type="button" class="btn btn-default btn-hamburger" (click)="hideNavMenu()">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+        <sidebar></sidebar>
+      </div>
+      <div class="col-12 hidden-sm-up no-gutters">
+        <div *ngIf="!displaySidebar" class="col-12 hidden-sm-up nav-revealbutton-row">
+          <button type="button" class="btn btn-default btn-hamburger" (click)="revealNavMenu()">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
       </div>
       <div class="col-sm-9">
         <router-outlet></router-outlet>

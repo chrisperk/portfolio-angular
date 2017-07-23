@@ -7,8 +7,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid #ee6e73;
-  background-color: #ee6e73;
+  border: 1px solid #7c54d3;
+  background-color: #7c54d3;
   border-radius: 10px;
   color: #eee;
   margin-top: 2%;
@@ -45,10 +45,4 @@
 
 .about-list i {
   padding-top: 3%;
-}
-
-@media(min-width: 768px) {
-  .list-box {
-    border-left: 10px solid #ee6e73;
-  }
 }

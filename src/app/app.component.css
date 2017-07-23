@@ -32,10 +32,45 @@ html {
 
 .nav-hidebutton-row {
   background-color: #d1fcf1;
-  padding: .5em 2em .5em 0;
+  padding: .5em 1.5em .5em 0;
 }
 
 .nav-revealbutton-row {
   background-color: #d1fcf1;
-  padding: .5em 1em .5em 0;
+  padding: .5em .7em .5em 0;
+}
+
+@@keyframes slidedown {
+  from {
+    margin-top: -147%;
+  }
+
+  to {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .mobile-sidebar {
+    margin-top: -147%;
+    width: 100%;
+  }
+
+  .btn-hamburger {
+    position: relative;
+    left: 85%;
+  }
+
+  .btn-hamburger:hover {
+    cursor: pointer;
+  }
+
+  .btn-hamburger:focus {
+    outline: none;
+  }
+
+  .reveal-mobile-sidebar {
+    animation-duration: 5s;
+    animation-name: slidedown;
+  }
 }
