@@ -2,8 +2,24 @@
 <div class="app-wrapper">
   <div class="container-fluid no-padding">
     <div class="row no-gutters">
-      <div class="col-sm-3">
-        <sidebar></sidebar>
+      <div id="sidebar" class="col-sm-3 hidden-xs-down">
+        <div *ngIf="displaySidebar" class="row">
+          <div class="col-12 hidden-sm-up nav-hidebutton-row">
+            <button type="button" class="btn btn-default pull-right" (click)="hideNavMenu()">
+              <i class="fa fa-bars"></i>
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <sidebar></sidebar>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="!displaySidebar" class="col-12 hidden-sm-up nav-revealbutton-row">
+        <button type="button" class="btn btn-default pull-right" (click)="revealNavMenu()">
+          <i class="fa fa-bars"></i>
+        </button>
       </div>
       <div class="col-sm-9">
         <router-outlet></router-outlet>

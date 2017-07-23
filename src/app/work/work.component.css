@@ -22,6 +22,7 @@
 
 .work-list {
   list-style: none;
+  padding-left: 0;
 }
 
 .work-list a {
