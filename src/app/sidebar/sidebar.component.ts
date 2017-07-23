@@ -17,7 +17,6 @@ export class SidebarComponent {
   ];
 
   hideSidebarMobile(): void {
-    console.log('hi');
     this.notifyHideSidebar.emit(false);
   }
 }

@@ -26,7 +26,6 @@ export class AppComponent implements OnInit {
   }
 
   onNotifyHideSidebar() {
-    console.log('got it');
     this.hideNavMenu();
   }
 }
