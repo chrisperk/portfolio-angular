@@ -13,6 +13,7 @@ export class AppComponent implements OnInit {
   }
 
   hideNavMenu() {
+    document.getElementById('mobile-sidebar').classList.add('hide-mobile-sidebar');
     document.getElementById('mobile-sidebar').classList.add('mobile-sidebar');
     document.getElementById('mobile-sidebar').classList.remove('reveal-mobile-sidebar');
     this.displaySidebar = false;
@@ -22,5 +23,10 @@ export class AppComponent implements OnInit {
     document.getElementById('mobile-sidebar').classList.remove('mobile-sidebar');
     document.getElementById('mobile-sidebar').classList.add('reveal-mobile-sidebar');
     this.displaySidebar = true;
+  }
+
+  onNotifyHideSidebar() {
+    console.log('got it');
+    this.hideNavMenu();
   }
 }

@@ -3,7 +3,7 @@
     <div class="col-12">
       <div class="row">
         <div class="col-12">
-          <a routerLink="/"><h3>{{title}}</h3></a>
+          <a routerLink="/" (click)="hideSidebarMobile()"><h3>{{title}}</h3></a>
         </div>
       </div>
       <!-- <div class="row">
@@ -19,6 +19,7 @@
               routerLink="{{link.link}}"
               class="list-group-item margin-center"
               [routerLinkActive]="['active-link']"
+              (click)="hideSidebarMobile()"
             >
               <span class="margin-center">{{link.text}}</span>
             </a>

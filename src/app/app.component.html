@@ -15,7 +15,7 @@
             <i class="fa fa-bars"></i>
           </button>
         </div>
-        <sidebar></sidebar>
+        <sidebar (notifyHideSidebar)="onNotifyHideSidebar($event)"></sidebar>
       </div>
       <div class="col-12 hidden-sm-up no-gutters">
         <div *ngIf="!displaySidebar" class="col-12 hidden-sm-up nav-revealbutton-row">

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'sidebar',
@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./sidebar.component.css', '../app.component.css']
 })
 export class SidebarComponent {
+  @Output() notifyHideSidebar: EventEmitter<boolean> = new EventEmitter<boolean>();
+
   title: string = 'Christopher Perkins';
   subtitle: string = 'Web Dev & Wizard Tamer';
   linkText: any = [
@@ -13,4 +15,9 @@ export class SidebarComponent {
     {text: 'About', link: '/about'},
     {text: 'Contact', link: '/contact'}
   ];
+
+  hideSidebarMobile(): void {
+    console.log('hi');
+    this.notifyHideSidebar.emit(false);
+  }
 }

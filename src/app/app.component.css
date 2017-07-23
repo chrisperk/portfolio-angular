@@ -40,7 +40,7 @@ html {
   padding: .5em .7em .5em 0;
 }
 
-@@keyframes slidedown {
+@keyframes slidedown {
   from {
     margin-top: -147%;
   }
@@ -50,9 +50,19 @@ html {
   }
 }
 
+@keyframes slideup {
+  from {
+    margin-top: 0;
+  }
+
+  to {
+    margin-top: -170%;
+  }
+}
+
 @media (max-width: 700px) {
   .mobile-sidebar {
-    margin-top: -147%;
+    margin-top: -170%;
     width: 100%;
   }
 
@@ -69,8 +79,13 @@ html {
     outline: none;
   }
 
+  .hide-mobile-sidebar {
+    animation-duration: .5s;
+    animation-name: slideup;
+  }
+
   .reveal-mobile-sidebar {
-    animation-duration: 5s;
+    animation-duration: .5s;
     animation-name: slidedown;
   }
 }
