@@ -9,10 +9,17 @@ export class WorkComponent {
   projects = [
     {
       name: 'TwitchMore',
-      link: 'http://banana-cake-13923.herokuapp.com/',
+      link: 'https://banana-cake-13923.herokuapp.com/',
       title: 'TwitchMore link',
       bannerClass: 'twitchmore-banner work-banner',
-      description: 'A React project that consumes the Twitch API to search its database and allows users to stream up to four Twitch channels at one time using responsive iFrames.'
+      description: 'A React/Redux project that consumes the Twitch API to search its database and allows users to stream up to four Twitch channels at one time using responsive iFrames.'
+    },
+    {
+      name: 'Reddit Search',
+      link: 'https://sheltered-wildwood-65386.herokuapp.com/',
+      title: 'Reddit link',
+      bannerClass: 'reddit-banner work-banner',
+      description: 'A simple app using React and Redux to get posts from subreddits and allow users to open in Reddit or share via email.'
     },
     {
       name: 'Gist Blog',
@@ -27,13 +34,6 @@ export class WorkComponent {
       title: 'RERM link',
       bannerClass: 'rerm-banner work-banner',
       description: 'Crafted a responsive digital space using the Bootstrap framework that shares the story of a foster home for cats in Austin, TX.'
-    },
-    {
-      name: 'Foundry Winery',
-      link: 'https://chrisperk.github.io/intro-workbook/15LessonFifteen/Checkpoint3/',
-      title: 'Foundy link',
-      bannerClass: 'foundry-banner work-banner',
-      description: 'A responsive digital space using the Bootstrap framework that serves as a landing page for a mock commercial winery.'
     }
   ]
 }
