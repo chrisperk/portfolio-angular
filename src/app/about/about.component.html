@@ -1,60 +1,51 @@
 <div class="component-wrapper">
-  <div class="container-fluid full-height">
-    <div class="row about-heading">
-      <div class="col-8 offset-2 about-heading-box">
-        <span>
+    <div class="container-fluid full-height">
+        <div class="row about-heading">
+            <div class="col-8 offset-2 about-heading-box">
+                <span>
           I craft customized, responsive web spaces. I value quality storytelling, and I strive to tell yours with honor and grace.
         </span>
-      </div>
-    </div>
-    <div class="row about-content">
-      <div class="col-sm-5 offset-sm-1 toolkit-box">
-        <div class="row">
-          <div class="col-12 center-text">
-            <h3>Toolkit</h3>
-          </div>
-          <div class="col-12">
-            <div class="row">
-              <div *ngFor="let tool of tools" class="col-6 col-lg-4 center-text">
-                <div class="my-card">
-                  <img
-                    class="img-fluid"
-                    src={{tool.imgSrc}}
-                    alt={{tool.alt}}
-                    aria-hidden="true"
-                  >
-                  <p>{{tool.name}}</p>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="col-sm-5 list-box">
-        <div class="row">
-          <div class="col-12 center-text">
-            <h3>You Should Know</h3>
-            <ul class="about-list fa-ul">
-              <li>
-                <i class="fa-li fa fa-share"></i>
-                The DOM is mightier than the bomb.
-              </li>
-              <li>
-                <i class="fa-li fa fa-share"></i>
-                I fear robotic warfare but beckon the robotic athletics boom the arms race will yield.
-              </li>
-              <li>
-                <i class="fa-li fa fa-share"></i>
-                My interest in fantasy sports dwarfs my interest in sports proper.
-              </li>
-              <li>
-                <i class="fa-li fa fa-share"></i>
-                Many different games give many different peoples a reason to live.
-              </li>
-            </ul>
-          </div>
+        <div class="row about-content">
+            <div class="col-sm-5 offset-sm-1 toolkit-box">
+                <div class="row">
+                    <div class="col-12 center-text">
+                        <h3>Toolkit</h3>
+                    </div>
+                    <div class="col-12">
+                        <div class="row">
+                            <div *ngFor="let tool of tools" class="col-6 col-lg-4 center-text">
+                                <div class="my-card">
+                                    <img class="img-fluid" src={{tool.imgSrc}} alt={{tool.alt}} aria-hidden="true">
+                                    <p>{{tool.name}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5 list-box">
+                <div class="row">
+                    <div class="col-12 center-text">
+                        <h3>You Should Know</h3>
+                        <ul class="about-list fa-ul">
+                            <li>
+                                <i class="fa-li fa fa-share"></i> The DOM is mightier than the bomb.
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-share"></i> I fear robotic warfare but beckon the robotic athletics boom the arms race will yield.
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-share"></i> My interest in fantasy sports dwarfs my interest in sports proper.
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-share"></i> Many different games give many different peoples a reason to live.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </div>

@@ -1,91 +1,84 @@
 html {
-  font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .app-wrapper {
-  height: 100vh;
-  width: 100%;
+    height: 100vh;
+    width: 100%;
 }
 
 .component-wrapper {
-  height: 100vh;
-  overflow-y: scroll;
-  background-color: #d1fcf1;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: #d1fcf1;
 }
 
 .full-height {
-  height: 100%;
+    height: 100%;
 }
 
 .margin-center {
-  margin: 0 auto;
+    margin: 0 auto;
 }
 
 .center-text {
-  text-align: center;
+    text-align: center;
 }
 
 .container-fluid.no-padding {
-  padding-left: 0;
-  padding-right: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .nav-hidebutton-row {
-  background-color: #d1fcf1;
-  padding: .5em 1.5em .5em 0;
+    background-color: #d1fcf1;
+    padding: .5em 1.5em .5em 0;
 }
 
 .nav-revealbutton-row {
-  background-color: #d1fcf1;
-  padding: .5em .7em .5em 0;
+    background-color: #d1fcf1;
+    padding: .5em .7em .5em 0;
 }
 
 @keyframes slidedown {
-  from {
-    margin-top: -147%;
-  }
-
-  to {
-    margin-top: 0;
-  }
+    from {
+        margin-top: -147%;
+    }
+    to {
+        margin-top: 0;
+    }
 }
 
 @keyframes slideup {
-  from {
-    margin-top: 0;
-  }
-
-  to {
-    margin-top: -170%;
-  }
+    from {
+        margin-top: 0;
+    }
+    to {
+        margin-top: -170%;
+    }
 }
 
 @media (max-width: 700px) {
-  .mobile-sidebar {
-    margin-top: -170%;
-    width: 100%;
-  }
-
-  .btn-hamburger {
-    position: relative;
-    left: 85%;
-  }
-
-  .btn-hamburger:hover {
-    cursor: pointer;
-  }
-
-  .btn-hamburger:focus {
-    outline: none;
-  }
-
-  .hide-mobile-sidebar {
-    animation-duration: .5s;
-    animation-name: slideup;
-  }
-
-  .reveal-mobile-sidebar {
-    animation-duration: .5s;
-    animation-name: slidedown;
-  }
+    .mobile-sidebar {
+        margin-top: -170%;
+        width: 100%;
+    }
+    .btn-hamburger {
+        position: relative;
+        left: 85%;
+    }
+    .btn-hamburger:hover {
+        cursor: pointer;
+    }
+    .btn-hamburger:focus {
+        outline: none;
+    }
+    .hide-mobile-sidebar {
+        animation-duration: .5s;
+        animation-name: slideup;
+    }
+    .reveal-mobile-sidebar {
+        animation-duration: .5s;
+        animation-name: slidedown;
+    }
 }
